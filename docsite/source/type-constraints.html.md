@@ -117,7 +117,7 @@ class User
 end
 
 user = User.new name: "joe",
-                emails: { address: "joe@example.com", description: "Job email" }
+                emails: [{ address: "joe@example.com", description: "Job email" }]
 
 user.emails.class         # => Array
 user.emails.first.class   # => User::Emails
